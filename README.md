@@ -1,6 +1,6 @@
 # Leaflet-Tutorial
 
-This is series of tutorials how to use Leaflet with Nodejs. To install one of the tutorials just copy them into any folder and execute `npm start` within the folder in your console.
+This is series of tutorials how to use [Leaflet](http://leafletjs.com/) with [Nodejs](https://nodejs.org/en/). To install one of the tutorials just copy them into any folder and execute `npm start` within the folder in your console.
 I am using Browserify and Beefy to start the tutorials on the localhost. If you do so as well, you will find it on <http://localhost:9966/> in your machine.
 
 Note: Make sure you have already installed Nodejs and NPM. If you haven't, here is a [link](https://nodejs.org/en/download/) to download and install it.
@@ -16,5 +16,4 @@ This second tutorial shows how to integrate an interactive Geojson layer. The ex
 #### 003-Leaflet-WMS-GetFeatureInfo
 
 Demonstrates a custom-built function to retrieve information (attribute values) from a WMS layer for a pixel location on the map.
-
 
