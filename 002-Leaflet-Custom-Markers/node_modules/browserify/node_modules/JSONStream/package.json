@@ -1,0 +1,80 @@
+{
+  "name": "JSONStream",
+  "version": "1.2.1",
+  "description": "rawStream.pipe(JSONStream.parse()).pipe(streamOfObjects)",
+  "homepage": "http://github.com/dominictarr/JSONStream",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/JSONStream.git"
+  },
+  "license": "(MIT OR Apache-2.0)",
+  "keywords": [
+    "json",
+    "stream",
+    "streaming",
+    "parser",
+    "async",
+    "parsing"
+  ],
+  "dependencies": {
+    "jsonparse": "^1.2.0",
+    "through": ">=2.2.7 <3"
+  },
+  "devDependencies": {
+    "it-is": "~1",
+    "assertions": "~2.2.2",
+    "render": "~0.1.1",
+    "trees": "~0.0.3",
+    "event-stream": "~0.7.0",
+    "tape": "~2.12.3"
+  },
+  "bin": {
+    "JSONStream": "./index.js"
+  },
+  "author": {
+    "name": "Dominic Tarr",
+    "email": "dominic.tarr@gmail.com",
+    "url": "http://bit.ly/dominictarr"
+  },
+  "scripts": {
+    "test": "set -e; for t in test/*.js; do echo '***' $t '***'; node $t; done"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "gitHead": "641402b48dbf3db5380e9bc857753c237d4ee9d9",
+  "bugs": {
+    "url": "https://github.com/dominictarr/JSONStream/issues"
+  },
+  "_id": "JSONStream@1.2.1",
+  "_shasum": "32aa5790e799481083b49b4b7fa94e23bae69bf9",
+  "_from": "JSONStream@>=1.0.3 <2.0.0",
+  "_npmVersion": "3.9.3",
+  "_nodeVersion": "6.4.0",
+  "_npmUser": {
+    "name": "dominictarr",
+    "email": "dominic.tarr@gmail.com"
+  },
+  "dist": {
+    "shasum": "32aa5790e799481083b49b4b7fa94e23bae69bf9",
+    "tarball": "https://registry.npmjs.org/JSONStream/-/JSONStream-1.2.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "dominictarr",
+      "email": "dominic.tarr@gmail.com"
+    },
+    {
+      "name": "doowb",
+      "email": "brian.woodward@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/JSONStream-1.2.1.tgz_1474751953169_0.9057570598088205"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/JSONStream/-/JSONStream-1.2.1.tgz",
+  "readme": "ERROR: No README data found!"
+}
