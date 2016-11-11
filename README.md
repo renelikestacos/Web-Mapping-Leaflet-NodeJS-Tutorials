@@ -11,5 +11,5 @@ This first tutorial shows a few possible base layers you can use with Leaflet.
 
 #### 002-Leaflet-Interactive-Geojson:
 
-This second tutorial shows how to integrate an interactive Geojson layer. The example data is a geojson of the Austrian states. If you hover over a state, the name appears in a small info control on the right bottom.
+This second tutorial shows how to integrate an interactive Geojson layer. The example data is a geojson of the Austrian states. If you hover over a state, the name, population density (people/km2) appears in a small info control on the right bottom. Furthermore, the population density classified into groups including a legend panel.
 
