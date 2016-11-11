@@ -44,7 +44,7 @@ var overLayers = {
 L.control.layers(baseLayers, overLayers).addTo(map);
 
 // Create control that shows information on hover
-var info = L.control({position:'bottomright'});
+var info = L.control({position:'topright'});
 
 info.onAdd = function (map) {
 	this._div = L.DomUtil.create('div', 'info');
@@ -53,11 +53,21 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-	this._div.innerHTML = '<p>Austrian States</p>' +  (props ?
-		'<b>' + props.name : 'Hover over a state');
+		this._div.innerHTML = '<p><b>Population Density</b></p>' +  (props ?
+			'<b>' + props.name + '</b><br />' + props.density + ' people / km<sup>2</sup>'
+			: 'Hover over a state');
 };
-
 info.addTo(map);
+
+function getColor(d) {
+	return d > 1000 ? '#0868ac' :
+			d > 130  ? '#2f8ec0' :
+			d > 100  ? '#55b0c8' :
+			d > 80   ? '#7bccc4' :
+			d > 70   ? '#a5dcbe' :
+			d > 50   ? '#ccebca' :
+						'#ccebca';
+}
 
 /* Set of function for the hover over the geojson layer */
 function style(feature) {
@@ -66,7 +76,9 @@ function style(feature) {
 		opacity: 0.7,
 		color: 'white',
 		dashArray: '2',
-		fillOpacity: 0.2
+		fillOpacity: 0.7,
+		fillColor: getColor(feature.properties.density)
+
 	};
 }
 
@@ -105,3 +117,28 @@ function onEachFeature(feature, layer) {
 		click: zoomToFeature
 	});
 }
+
+
+var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+
+	var div = L.DomUtil.create('div', 'info legend'),
+		grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+		labels = [],
+		from, to;
+
+	for (var i = 0; i < grades.length; i++) {
+		from = grades[i];
+		to = grades[i + 1];
+
+		labels.push(
+			'<i style="background:' + getColor(from + 1) + '"></i> ' +
+			from + (to ? '&ndash;' + to : '+'));
+	}
+
+	div.innerHTML = labels.join('<br>');
+	return div;
+};
+
+legend.addTo(map);
