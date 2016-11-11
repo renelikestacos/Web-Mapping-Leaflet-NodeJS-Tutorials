@@ -7,7 +7,7 @@ var map = L.map('map', {
 });
 
 // Set the position and zoom level of the map
-map.setView([46.617021, 13.848778], 8);
+map.setView([47.444872, 14.033671], 8);
 
 /*	Variety of base layers */
 var osm_mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
