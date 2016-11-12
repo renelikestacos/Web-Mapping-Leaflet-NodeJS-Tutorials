@@ -18,4 +18,4 @@ This tutorial shows how to integrate an interactive Geojson layer. The example d
 Demonstrates a custom-built function to retrieve information (attribute values) from a WMS layer for a pixel location on the map. OpenLayers has this function, Leaflet doesn't. For now it only works if one WMS layer is active.
 
 #### 005-Leaflet-Custom-LayerGroup-Panel
-This tutorial shows how to include a customized layergroup panel to represent the displayed layers in a ordered way. You can customize the styling like you want, you only need to change the `style.css` file.
+This tutorial shows how to include a customized layergroup panel to represent the displayed layers in a ordered way. I included layers from different layer sources, such as a few base layers, WMS and Geojson. You can customize the styling of the layergroup panel like you want, you only need to change the `style.css` file.
