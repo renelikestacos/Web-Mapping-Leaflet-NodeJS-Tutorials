@@ -9,11 +9,15 @@ Note: Make sure you have already installed Nodejs and NPM. If you haven't, here 
 
 This first tutorial shows a few possible base layers you can use with Leaflet.
 
-#### 002-Leaflet-Interactive-Geojson:
+#### 002-Leaflet-Custom-Markers
 
-This second tutorial shows how to integrate an interactive Geojson layer. The example data is a geojson of the Austrian states. If you hover over a state, the name, population density (people/km2) appears in a small info control on the right bottom. Furthermore, the population density classified into groups including a legend panel.
+Shows how to integrate custom style markers. Markers are placed on the nine capitals of the Austrian states. By clicking on them, a popup appears and gives you information about the location.
 
-#### 003-Leaflet-WMS-GetFeatureInfo
+#### 003-Leaflet-Interactive-Geojson:
+
+This tutorial shows how to integrate an interactive Geojson layer. The example data is a geojson of the Austrian states. If you hover over a state, the name, population density (people/km2) appears in a small info control on the right bottom. Furthermore, the population density classified into groups including a legend panel.
+
+#### 004-Leaflet-WMS-GetFeatureInfo
 
 Demonstrates a custom-built function to retrieve information (attribute values) from a WMS layer for a pixel location on the map.
 
