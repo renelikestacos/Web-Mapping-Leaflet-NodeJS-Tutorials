@@ -7,8 +7,7 @@ var map = L.map('map', {
 });
 
 // Set the position and zoom level of the map
-map.setView([47.444872, 14.033671], 7);
-//map.setView([47.070762, 15.438698],12);
+map.setView([47.70, 13.35], 7);
 
 // Set base layers
 var esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {

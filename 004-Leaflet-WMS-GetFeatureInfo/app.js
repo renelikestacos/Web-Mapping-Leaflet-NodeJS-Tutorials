@@ -8,7 +8,7 @@ var map = L.map('map', {
 });
 
 // Set the position and zoom level of the map
-map.setView([47.444872, 14.033671], 7);
+map.setView([47.70, 13.35], 7);
 
 /* Base Layers */
 var esri_WorldImagery = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
