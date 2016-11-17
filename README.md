@@ -19,3 +19,6 @@ Demonstrates a custom-built function to retrieve information (attribute values) 
 
 #### 005-Leaflet-Custom-LayerGroup-Panel:
 This tutorial shows how to include a customized layergroup panel to represent the displayed layers in a ordered way. I have included layers from different layer sources, such as a few base layers, WMS and Geojson. You can customize the styling of the layergroup panel like you want, you only need to change the `style.css` file.
+
+#### 006-Leaflet-WFS-Request:
+Shows the simple approach of making a WFS (Web Feature Service) Request on Leaflet. The result is a JSON structure of each object in the ESRI Shapefile which is stored in a Geoserver. From here, you could create a fancy looking table structure with JQuery or whatever and display them in a nice way.
