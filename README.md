@@ -14,6 +14,8 @@ Shows how to integrate custom style markers. Markers are placed on the nine capi
 #### 003-Leaflet-Interactive-Geojson:
 This tutorial shows how to integrate an interactive Geojson layer. The example data is a geojson of the Austrian states. If you hover over a state, the name, population density (people/km2) appears in a small info control on the right bottom. Furthermore, the population density classified into groups including a legend panel.
 
+Optional: In case you are familiar with MongoDB you can also find the Geojson in my MongoDB on mLAB. It can be find here `mongodb://guest:guest@ds159328.mlab.com:59328/mongo_project40`, the collection is called `austria`.
+
 #### 004-Leaflet-WMS-GetFeatureInfo:
 Demonstrates a custom-built function to retrieve information (attribute values) from a WMS layer for a pixel location on the map. OpenLayers has this function, Leaflet doesn't. For now it only works if one WMS layer is active.
 
