@@ -24,3 +24,6 @@ This tutorial shows how to include a customized layergroup panel to represent th
 
 #### 006-Leaflet-WFS-Request:
 Shows the simple approach of making a WFS (Web Feature Service) Request on Leaflet. The result is a JSON structure of each object in the ESRI Shapefile which is stored in a Geoserver. From here, you could create a fancy looking table structure with JQuery or whatever and display them in a nice way.
+
+#### 007-Leaflet-Custom-Opacity-Slider:
+Simple example of an opacity slider for Leaflet.
