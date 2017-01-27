@@ -1,0 +1,10 @@
+#map
+{
+    width: auto;
+    height: 500px;
+}
+.opacity_slider_control .ui-slider-range {
+    background-image: none;
+    background-color: #3a617f;
+    height: 200px;
+}  
