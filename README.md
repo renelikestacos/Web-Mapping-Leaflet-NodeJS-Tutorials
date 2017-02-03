@@ -27,3 +27,7 @@ Shows the simple approach of making a WFS (Web Feature Service) Request on Leafl
 
 #### 007-Leaflet-Custom-Opacity-Slider:
 Simple example of an opacity slider for Leaflet.
+
+
+#### 008-Leaflet-Search-Function-Geojson:
+In this tutorial, you can find a search function example for Geojson data. The example data is a geojson of the Austrian states. If you type three or more letters into the search field, it will automatically give you state suggestions. By clicking on one of the suggestions, it will zoom into that state on the map.
