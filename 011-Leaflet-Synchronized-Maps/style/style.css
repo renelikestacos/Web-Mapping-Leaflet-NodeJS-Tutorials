@@ -1,0 +1,9 @@
+#map_1, #map_2 { 
+	width: 49.5%; height: 500px; 
+}
+#map_1 { 
+	float: left; 
+}
+#map_2 { 
+	float: right; 
+}
