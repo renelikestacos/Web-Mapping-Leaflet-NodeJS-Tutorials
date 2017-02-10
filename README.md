@@ -34,3 +34,6 @@ In this tutorial, you can find a search function example for Geojson data. The e
 
 #### 009-Leaflet-Custom-LayerGroup-Panel-2:
 Like tutorial 005, this tutorial shows how to include a customized layergroup panel but in a more modern way. Layers from different data sources were included. You can customize the appearance, you only need to change the `layer_control.css` file. This custom styled layer control is based on the flawless work of Davi Custodio's [Leaflet.StyledLayerControl](https://github.com/davicustodio/Leaflet.StyledLayerControl).
+
+#### 010-Leaflet-WMS-Common-Query-Language:
+This tutorial shows how to use CQL (Common Query Language) on WMS layers. In the example, below the map it will be shown a screenshot of the attributes of the WMS layer. The example shows how to use CQL on all three attribute categories.
