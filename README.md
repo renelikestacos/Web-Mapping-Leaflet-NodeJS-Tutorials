@@ -20,7 +20,7 @@ Optional: In case you are familiar with MongoDB you can also find the Geojson in
 Demonstrates a custom-built function to retrieve information (attribute values) from a WMS layer for a pixel location on the map. OpenLayers has this function, Leaflet doesn't. For now it only works if one WMS layer is active.
 
 #### 005-Leaflet-Custom-LayerGroup-Panel:
-This tutorial shows how to include a customized layergroup panel to represent the displayed layers in a ordered way. I have included layers from different layer sources, such as a few base layers, WMS and Geojson. You can customize the styling of the layergroup panel like you want, you only need to change the `style.css` file.
+This tutorial shows how to include a customized layergroup panel to represent the displayed layers in a ordered way. I have included layers from different layer sources, such as a few base layers, WMS and Geojson. You can customize the styling of the layergroup panel like you want, you only need to change the [style.css](https://github.com/g07kore/leaflet-nodejs-tutorials/blob/master/005-Leaflet-Custom-LayerGroup-Panel/style/style.css) file.
 
 #### 006-Leaflet-WFS-Request:
 Shows the simple approach of making a WFS (Web Feature Service) Request on Leaflet. The result is a JSON structure of each object in the ESRI Shapefile which is stored in a Geoserver. From here, you could create a fancy looking table structure with JQuery or whatever and display them in a nice way.
@@ -37,3 +37,6 @@ Like tutorial 005, this tutorial shows how to include a customized layergroup pa
 
 #### 010-Leaflet-WMS-Common-Query-Language:
 This tutorial shows how to use CQL (Common Query Language) on WMS layers. In the example, below the map it will be shown a screenshot of the attributes of the WMS layer. The example shows how to use CQL on all three attribute categories.
+
+#### 011-Leaflet-Synchronized-Maps:
+This example shows two synchronized maps next two each other. The Leaflet.Sync package is already installed, if you dont have it just do a simple `npm install leaflet.sync`. Eventually it also requires a ```require('leaflet.sync')``` like it is shown in [app.js](https://github.com/g07kore/leaflet-nodejs-tutorials/blob/master/011-Leaflet-Synchronized-Maps/app.js) line 3.
