@@ -1,0 +1,31 @@
+{
+  "name": "leaflet-tutorial",
+  "version": "0.0.1",
+  "description": "Leaflet tutorial series",
+  "main": "app.js",
+  "scripts": {
+    "start": "beefy app.js:bundle.js --live",
+    "bundle": "browserify app.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g07kore/Leaflet-Tutorial.git"
+  },
+  "keywords": [
+    "leaflet",
+    "maps",
+    "gis"
+  ],
+  "author": "rkopeinig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g07kore/Leaflet-Tutorial/issues"
+  },
+  "dependencies": {
+    "leaflet": "^1.0.1"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.8",
+    "browserify": "^13.1.1"
+  }
+}
