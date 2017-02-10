@@ -39,4 +39,4 @@ Like tutorial 005, this tutorial shows how to include a customized layergroup pa
 This tutorial shows how to use CQL (Common Query Language) on WMS layers. In the example, below the map it will be shown a screenshot of the attributes of the WMS layer. The example shows how to use CQL on all three attribute categories.
 
 #### 011-Leaflet-Synchronized-Maps:
-This example shows two synchronized maps next two each other. The Leaflet.Sync package is already installed, if you dont have it just do a simple `npm install leaflet.sync`. Eventually it also requires a ```require('leaflet.sync')``` like it is shown in [app.js](https://github.com/g07kore/leaflet-nodejs-tutorials/blob/master/011-Leaflet-Synchronized-Maps/app.js) line 3.
+This example shows two synchronized maps next two each other. The [Leaflet.Sync](https://github.com/turban/Leaflet.Sync) package is already installed, if you dont have it just do a simple `npm install leaflet.sync`. Eventually it also requires a ```require('leaflet.sync')``` like it is shown in [app.js](https://github.com/g07kore/leaflet-nodejs-tutorials/blob/master/011-Leaflet-Synchronized-Maps/app.js) line 3.
