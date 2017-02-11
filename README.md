@@ -40,3 +40,6 @@ This tutorial shows how to use CQL (Common Query Language) on WMS layers. In the
 
 #### 011-Leaflet-Synchronized-Maps:
 This example shows two synchronized maps next two each other. The [Leaflet.Sync](https://github.com/turban/Leaflet.Sync) package is already installed, if you don't have it just do a simple `npm install leaflet.sync`. Eventually it also requires a ```require('leaflet.sync')``` like it is shown in [app.js](https://github.com/g07kore/leaflet-nodejs-tutorials/blob/master/011-Leaflet-Synchronized-Maps/app.js) line 3.
+
+#### 012-Leaflet-Marker-Cluster:
+This tutorial shows you how to create marker clusters. by zooming in or out it will decrease or increase the markers into marker clusters. If you only use my code, make sure to install [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster) package with a simple `npm install leaflet.markercluster`. Eventually it also requires a ```require('leaflet.markercluster')``` like it is shown in [app.js](https://github.com/g07kore/leaflet-nodejs-tutorials/blob/master/012-Leaflet-Marker-Cluster/app.js) line 3.
