@@ -71,3 +71,13 @@ var overlays = [
 			
 var control = L.Control.styledLayerControl(baseMaps, overlays, layerControlOptions);
 map.addControl(control);
+
+map.on('overlayadd', onOverlayAdd);
+function onOverlayAdd(e){
+    console.log(e)
+}
+
+map.on('overlayremove', onOverlayRemove);
+function onOverlayRemove(e){
+	console.log(e)
+}
