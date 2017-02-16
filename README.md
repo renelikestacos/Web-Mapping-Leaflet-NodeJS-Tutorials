@@ -1,9 +1,82 @@
 # Leaflet-Nodejs-Tutorial
 
 This is a series of tutorials how to use [Leaflet](http://leafletjs.com/) with [Nodejs](https://nodejs.org/en/). To install one of the tutorials just copy them into any folder and execute `npm start` within the folder in your console.
-I am using Browserify and Beefy to start the tutorials on the localhost. If you do so as well, you will find it on <http://localhost:9966/> in your machine.
+I am using [Browserify](http://browserify.org/) and [Beefy](http://didact.us/beefy/) to start the tutorials on the localhost. If you do so as well, you will find it on <http://localhost:9966/> in your machine.
 
 Note: Make sure you have already installed Nodejs and NPM. If you haven't, here is a [link](https://nodejs.org/en/download/) to download and install it.
+
+## From the scratch
+In the following steps I will explain you how to set up a Leaflet-Nodejs application from the scratch. Make sure you installed Nodejs and NPM as I already mentioned above.<br>
+#### 1. Create directory & files
+Create and navigate to a new project folder and create some files with 
+```
+mkdir myapp
+cd myapp
+mkdir style
+touch index.html app.js style/style.css
+```
+These files are forming the base of our application. Then, we run `npm init` to create the package.json file. In the myapp folder you should find now a package.json file. Next step is to install leaflet with `npm install --save leaflet`. Using `--save` means basically it will be automatically saved as a dependency in the `package.json` file.<br>
+
+#### 2. Write some code!
+We already created files like `index.html`, `app.js` and `style.css`. Open file with `vi index.html` and paste the following code into it.
+```html
+<!doctype html>
+<html>
+<head>
+<title>My first Leaflet example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div id="map"></div>
+<script src="bundle.js"></script>
+</body>
+</html>
+```
+Now, lets do the same thing with the `app.js` file. Open the file with `vi app.js` and paste the following code into it.
+```javascript
+// Initialize leaflet.js
+var L = require('leaflet');
+
+// Initialize the map
+var map = L.map('map', {
+  scrollWheelZoom: false
+});
+
+// Set the position and zoom level of the map
+map.setView([47.70, 13.35], 7);
+
+// Initialize the base layer
+var osm_mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; OSM Mapnik <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+```
+The exact same thing with the `style.css` file. Open the file with `vi style/style.css` and paste the code into it.
+```css
+#map
+{
+    width: auto;
+    height: 500px;
+}
+```
+#### 3. Create the local development server
+Eventually, you ask yourself why did you point to `bundle.js` in the `index.html`? It does not exist yet and actually we also won't create it at all. [Browserify](http://browserify.org/) and [Beefy](http://didact.us/beefy/) will serve the website on your computer. Those two modules will generate the `bundle.js` on the fly for us. So lets install them with `npm install --save-dev beefy browserify`.
+Now lets change script section in our `package.json` to 
+```json
+"scripts": {
+    "start": "beefy app.js:bundle.js --live",
+    "bundle": "browserify app.js -o bundle.js"
+  },
+```
+The part `browserify app.js -o bundle.js` will generate the `bundle.js` file.
+
+#### 4. Run it!
+Just do `npm start` in the `myapp` folder and that's it! You should be able to see your app running on [localhost:9966](http://localhost:9966). Have fun!
+
+## Leaflet Nodejs Tutorials
 
 #### 001-Leaflet-Base-Layers:
 This first tutorial shows a few possible base layers you can use with Leaflet.
