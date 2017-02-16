@@ -74,7 +74,8 @@ Now lets change script section in our `package.json` to
 The part `browserify app.js -o bundle.js` will generate the `bundle.js` file.
 
 #### 4. Run it!
-Just do `npm start` in the `myapp` folder and that's it! You should be able to see your app running on [localhost:9966](http://localhost:9966). Have fun!
+Just do `npm start` in the `myapp` folder and that's it! You should be able to see your app running on [localhost:9966](http://localhost:9966). Your example should look like in the illustration below. Have fun!
+![alt text](https://github.com/g07kore/leaflet-nodejs-tutorials/blob/master/001-Leaflet-BaseLayers/style/example.png "")
 <br><br><br>
 ## Leaflet Nodejs Tutorials
 
