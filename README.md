@@ -3,7 +3,7 @@
 This is a series of tutorials how to use [Leaflet](http://leafletjs.com/) with [Nodejs](https://nodejs.org/en/). To install one of the tutorials just copy them into any folder and execute `npm start` within the folder in your console.
 I am using [Browserify](http://browserify.org/) and [Beefy](http://didact.us/beefy/) to start the tutorials on the localhost. If you do so as well, you will find it on <http://localhost:9966/> in your machine.<br><br><br>
 
-## From the scratch
+## Getting started
 In the following steps, I will explain you how to set up a Leaflet-Nodejs application from the scratch.
 
 #### 1. Install dependencies
