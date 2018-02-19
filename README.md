@@ -1,4 +1,4 @@
-# Web Mapping Tutorials using Leaflet and Nodejs
+# Web Mapping Tutorials using Leaflet and NodeJS
 
 
 This is a series of tutorials how to use [Leaflet](http://leafletjs.com/) with [Nodejs](https://nodejs.org/en/). To install one of the tutorials just copy them into any folder and execute `npm start` within the folder in your console.
