@@ -1,0 +1,12 @@
+body {
+  background-color: purple;
+  color: yellow;
+}
+
+body:before {
+  content: " ";
+}
+
+body:after {
+  content: ' ';
+}
